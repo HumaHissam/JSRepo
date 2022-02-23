@@ -6,6 +6,7 @@
     <title>Home</title> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body class="bg-secondary">
 
@@ -35,7 +36,13 @@
                 <div class="container-fluid py-5 bg-secondary">
                     <div class="row align-items-center justify-content-center text-white text-center">
                         <div class="col-lg-8">
-                            <h3 class="display-5 font-weight-bold">View My References Here</h3>
+                            <h3 class="display-5 font-weight-bold">Click on the View button to check my references</h3>
+                            
+                                <button type="button" id ="viewRefBtn" class="btn btn-dark" onClick="displayRefrences()">View</button>
+                                <button type="button"  id ="hideRefBtn" class="btn btn-dark" >Hide</button>
+                               <!-- <button type="button" id ="viewRefBtn" class="btn btn-dark" >View</button> -->
+                               
+                            
                             <hr class="bg-white mb-5" />
                             <p id="ReferenceList" class = text-light>
                                
